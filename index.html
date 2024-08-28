@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" style="center;background-size: cover;background-attachment: fixed;background-color: #dce3f3;">
+<script src="./submit.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登记</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="height:100%;background: none;display: flex;justify-content: center;">
+    <div class="box card" style="width: 40%;position: absolute;top:calc(50% - 300px);height: 425px;min-width: 400px;margin: 0;">
+        <h1><p>信息填写</p></h1>
+        <div class="body" style="padding: 10px;">
+            <div style="display: flex;">
+                <p style="width: 50px;margin: 0;padding: 5px 0;">姓名</p>
+                <input id="name" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 50px;margin: 0;padding: 5px 0;">性别</p>
+                <input id="gender" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 100px;margin: 0;padding: 5px 0;">身份证号</p>
+                <input id="id" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 130px;margin: 0;padding: 5px 0;">开学后年级</p>
+                <input id="grade" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 50px;margin: 0;padding: 5px 0;">学校</p>
+                <input id="school" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 100px;margin: 0;padding: 5px 0;">联系电话</p>
+                <input id="telep" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <div style="display: flex;">
+                <p style="width: 100px;margin: 0;padding: 5px 0;">C++ 学龄</p>
+                <input id="cppgr" type="text" class="inp" style="flex-grow: 1;" value=""></div>
+
+            <loading style="position: absolute;right: 80px;bottom: 10px;opacity: 0;transition: 100ms;" id="loading">
+                <svg width="28px" height="28px" viewBox="0 0 16 16"><circle cx="8px" cy="8px" r="7px"></circle><circle cx="8px" cy="8px" r="6px"></circle></svg>
+            </loading>
+            <a class="btn" style="position: absolute;right: 25px;bottom: 10px;" onclick="submitForm()">继续</a>
+        </div>
+    </div>
+    <script src="./tapple/jq.min.js"></script>
+    <script src="./tapple/scroll.js"></script>
+</body>
+</html>
